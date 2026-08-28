@@ -822,6 +822,10 @@ select:focus-visible {
   box-shadow: 0 24px 50px rgba(17, 24, 39, 0.13);
 }
 
+.service-card.is-hidden {
+  display: none;
+}
+
 .card-icon {
   width: 46px;
   height: 46px;

@@ -12,9 +12,9 @@
       <span>Hypothetical internship prototype</span>
       <div class="top-actions">
         <a href="#main">Skip to main content</a>
-        <button type="button" class="text-btn" id="decreaseText">A-</button>
-        <button type="button" class="text-btn" id="increaseText">A+</button>
-        <button type="button" class="text-btn" id="contrastToggle">High contrast</button>
+        <button type="button" class="text-btn" id="decreaseText" aria-pressed="false">A-</button>
+        <button type="button" class="text-btn" id="increaseText" aria-pressed="false">A+</button>
+        <button type="button" class="text-btn" id="contrastToggle" aria-pressed="false">High contrast</button>
         <select aria-label="Language selector">
           <option>English</option>
           <option>Hindi</option>
@@ -180,25 +180,25 @@
         <p>Citizens can search, filter, and select services based on their need.</p>
       </div>
       <div class="service-grid">
-        <article class="service-card">
+        <article class="service-card" data-search="certificate income residence birth application">
           <span class="card-icon">ID</span>
           <h3>Certificates</h3>
           <p>Apply for income, residence, birth, and other certificate-related services.</p>
           <a href="#login">Start application</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-search="appointment booking verification service desk support">
           <span class="card-icon">AP</span>
           <h3>Appointments</h3>
           <p>Book slots for document verification, service desks, and support visits.</p>
           <a href="#appointments">Book slot</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-search="document upload identity proof address proof application files">
           <span class="card-icon">DM</span>
           <h3>Documents</h3>
           <p>Upload and manage identity proof, address proof, and application files.</p>
           <a href="#documents">Manage files</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-search="status tracking application progress verification decision">
           <span class="card-icon">TR</span>
           <h3>Status Tracking</h3>
           <p>Track applications from submission to verification, decision, or correction.</p>
@@ -274,7 +274,8 @@
           <img class="inline-visual" src="assets/documents-moment.svg" alt="Document upload illustration" />
           <strong>Upload Document</strong>
           <p>Supported examples: ID proof, address proof, certificate scans, and application forms.</p>
-          <input type="file" aria-label="Upload document" />
+          <input type="file" id="documentUpload" aria-label="Upload document" accept=".pdf,.jpg,.jpeg,.png" />
+          <p class="form-message" id="documentMessage" role="status"></p>
         </div>
         <div class="document-list">
           <div><span>Address Proof.pdf</span><span class="tag verified">Verified</span></div>
@@ -348,12 +349,14 @@
           <input type="email" placeholder="Email address" aria-label="Email address" required />
           <input type="password" placeholder="Password" aria-label="Password" required />
           <button class="primary-btn" type="submit">Login</button>
+          <p class="form-message" id="loginMessage" role="status"></p>
         </form>
         <form class="auth-form" id="registerForm">
           <input type="text" placeholder="Full name" aria-label="Full name" required />
           <input type="email" placeholder="Email address" aria-label="Email address" required />
           <input type="password" placeholder="Create password" aria-label="Create password" required />
           <button class="primary-btn" type="submit">Create Account</button>
+          <p class="form-message" id="registerMessage" role="status"></p>
         </form>
       </div>
     </section>
