@@ -1,66 +1,68 @@
 # Digital Citizen Service Portal
 
-## Project Overview
-Digital Citizen Service Portal is a hypothetical e-governance web application prototype created for Week 1 of the Junior Web Developer - E-Governance & Digital Services internship task at YuvaIntern. The portal concept allows citizens to discover public services, submit applications, upload documents, book appointments, track application status, and receive notifications through a responsive web interface.
+A hypothetical e-governance web application prototype for the YuvaIntern Junior Web Developer – E-Governance & Digital Services internship.
 
-The interface uses a respectful India-inspired visual style with tricolor accents and a custom portal identity. It does not use any official Government of India emblem, ministry logo, department logo, or real public authority branding.
+## Progress
 
-## Problem Statement
-Many public services require citizens to visit offices, manage paper documents, and follow up manually for status updates. This can create delays, confusion, and repeated visits. A planned digital service portal can improve accessibility, transparency, and convenience by placing common service workflows in one organized online system.
+- **Week 1:** Planning, requirements, user flow and high-level architecture.
+- **Week 2:** Front-end development and UI/UX design using HTML, CSS and JavaScript.
+- **Week 3:** Backend integration, relational database design, REST APIs, authentication, document handling, notifications, security and testing.
 
-## Features
-- Attractive India-inspired landing page for a hypothetical citizen service portal
-- Respectful Indian flag visual created with CSS
-- Quick access service shortcuts
-- Search box for common citizen services
-- Accessibility controls for high contrast and text size
-- Navigation bar with responsive mobile menu
-- Service discovery cards
-- Simple citizen journey section
-- Appointment booking form
-- Document upload and document status preview
-- Application tracking section
-- Login and registration UI
-- Citizen dashboard preview
-- Notification list
-- Public help desk information section
-- Footer with project disclaimer
+The Week 3 update builds on the existing citizen-facing UI instead of replacing it.
 
 ## Technology Stack
-- HTML5 for page structure
-- CSS3 for styling and responsive layout
-- JavaScript for menu, tab, appointment, and tracking interactions
 
-## Project Structure
-```text
-digital-citizen-service-portal/
-|-- index.html
-|-- style.css
-|-- script.js
-|-- README.md
-|-- architecture_diagram.png
-|-- GITHUB_SETUP.md
-|-- submission_description.txt
-`-- docs/
-    `-- Week_1_E_Governance_Project_Report.docx
+HTML5, CSS3, JavaScript, Python, Flask, SQLite and Git/GitHub.
+
+## Run Locally
+
+```bash
+python -m venv .venv
 ```
 
-## How to Run
-1. Download or clone the project folder.
-2. Open `index.html` in any modern web browser.
-3. No server or database setup is required for this static prototype.
+Windows PowerShell:
 
-## Screenshots
-Add screenshots here after opening the prototype in a browser.
+```powershell
+.\\.venv\\Scripts\\Activate.ps1
+```
 
-## Future Scope
-- Mobile application for Android and iOS
-- Multilingual support for citizens from different regions
-- AI chatbot for service guidance
-- Digital identity integration after proper legal and technical review
-- Advanced analytics for service performance
-- Automated SMS/email notifications
-- Accessibility improvements based on testing feedback
+Install dependencies:
+
+```bash
+pip install -r backend/requirements.txt
+```
+
+Start the backend from the project root:
+
+```bash
+python -m backend.app
+```
+
+API: `http://127.0.0.1:5000`
+
+Then open `index.html` in a modern browser while the backend is running.
+
+## Demo Account
+
+Email: `demo@citizen.local`  
+Password: `Demo@12345`
+
+This account is for local prototype testing only.
+
+## Documentation
+
+- `docs/API_DOCUMENTATION.md`
+- `docs/DATABASE_SCHEMA.md`
+- `docs/ARCHITECTURE.md`
+- `docs/BACKUP_RECOVERY.md`
+- `docs/SECURITY_NOTES.md`
+
+## Testing
+
+```bash
+python -m unittest discover -s tests -v
+```
 
 ## Disclaimer
-This is a hypothetical internship project created for academic and learning purposes. It is not an official government portal and is not affiliated with any government department or public authority. Any India-inspired visual elements are decorative and educational, not official branding.
+
+This is a hypothetical internship project created for academic and learning purposes. It is not an official government portal and is not affiliated with any government department or public authority. India-inspired visual elements are decorative and educational, not official branding.

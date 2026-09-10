@@ -12,9 +12,7 @@
       <span>Hypothetical internship prototype</span>
       <div class="top-actions">
         <a href="#main">Skip to main content</a>
-        <button type="button" class="text-btn" id="decreaseText" aria-pressed="false">A-</button>
-        <button type="button" class="text-btn" id="increaseText" aria-pressed="false">A+</button>
-        <button type="button" class="text-btn" id="contrastToggle" aria-pressed="false">High contrast</button>
+        <button type="button" class="text-btn" id="contrastToggle">High contrast</button>
         <select aria-label="Language selector">
           <option>English</option>
           <option>Hindi</option>
@@ -38,12 +36,10 @@
         <span></span>
       </button>
       <div class="nav-links">
-        <a href="#quick-access">Quick Access</a>
         <a href="#services">Services</a>
         <a href="#appointments">Appointments</a>
         <a href="#documents">Documents</a>
         <a href="#tracking">Track</a>
-        <a href="#help">Help</a>
         <a href="#login" class="nav-cta">Citizen Login</a>
       </div>
     </nav>
@@ -53,7 +49,6 @@
   <main id="main">
     <section class="hero" id="home">
       <div class="hero-content">
-        <img class="flying-tricolor" src="assets/flying-tricolor.svg" alt="Decorative flying tricolor ribbon" />
         <p class="eyebrow">Digital service planning concept</p>
         <h1>One citizen dashboard for services, appointments, documents, and updates.</h1>
         <p class="hero-text">
@@ -68,12 +63,6 @@
       </div>
 
       <aside class="portal-card" aria-label="Citizen portal preview">
-        <img class="hero-illustration" src="assets/heritage-service.svg" alt="Original India-inspired digital citizen service illustration" />
-        <div class="flag-card" aria-label="Indian flag inspired visual">
-          <span class="flag-saffron"></span>
-          <span class="flag-white"><span class="flag-wheel"></span></span>
-          <span class="flag-green"></span>
-        </div>
         <div class="card-header">
           <span class="status-dot"></span>
           <strong>Citizen Dashboard</strong>
@@ -91,88 +80,6 @@
       </aside>
     </section>
 
-    <section class="landmark-section" aria-labelledby="landmarkTitle">
-      <div class="section-heading">
-        <p class="eyebrow">India-inspired visual identity</p>
-        <h2 id="landmarkTitle">Cultural and civic moments for a public-friendly portal.</h2>
-        <p>Original illustrations inspired by Indian landmarks and peaceful public-service values. These are decorative, not official government assets.</p>
-      </div>
-      <div class="landmark-grid">
-        <article>
-          <img src="assets/red-fort.svg" alt="Original Red Fort inspired illustration" />
-          <h3>Red Fort Inspired</h3>
-          <p>Represents heritage, public identity, and civic pride in a safe original illustration style.</p>
-        </article>
-        <article>
-          <img src="assets/india-gate.svg" alt="Original India Gate inspired illustration" />
-          <h3>India Gate Inspired</h3>
-          <p>Adds a recognizable public landmark feel without using copied photographs or official marks.</p>
-        </article>
-        <article>
-          <img src="assets/buddha.svg" alt="Original Lord Buddha inspired peaceful illustration" />
-          <h3>Lord Buddha Inspired</h3>
-          <p>Brings a calm, trustworthy, citizen-first feeling to the portal experience.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="moments-section" aria-labelledby="momentsTitle">
-      <div class="section-heading">
-        <p class="eyebrow">Citizen moments</p>
-        <h2 id="momentsTitle">Public services made easier through digital access.</h2>
-        <p>Original illustrations show common citizen moments without using official government branding.</p>
-      </div>
-      <div class="moments-grid">
-        <article>
-          <img src="assets/service-kiosk.svg" alt="Citizens using a digital public service kiosk" />
-          <div>
-            <h3>Guided Service Access</h3>
-            <p>Citizens can find services, read requirements, and begin forms with clear next steps.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/documents-moment.svg" alt="Secure document upload and verification illustration" />
-          <div>
-            <h3>Document Readiness</h3>
-            <p>Proof documents can be uploaded, reviewed, and tracked from one dashboard.</p>
-          </div>
-        </article>
-        <article>
-          <img src="assets/status-moment.svg" alt="Application status tracking dashboard illustration" />
-          <div>
-            <h3>Status Transparency</h3>
-            <p>Application progress is shown in simple stages so citizens know what is happening.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="quick-access" id="quick-access" aria-labelledby="quickAccessTitle">
-      <div class="quick-access-inner">
-        <div>
-          <p class="eyebrow">Easy public access</p>
-          <h2 id="quickAccessTitle">Find the service you need quickly.</h2>
-          <p>Search common citizen services or use one-tap shortcuts for frequently used public workflows.</p>
-        </div>
-        <form class="service-search" id="serviceSearchForm">
-          <label for="serviceSearch">Search services</label>
-          <div>
-            <input id="serviceSearch" type="search" placeholder="Search certificate, appointment, document, grievance..." />
-            <button class="primary-btn" type="submit">Search</button>
-          </div>
-          <p id="searchMessage" role="status">Popular: certificates, appointments, documents, tracking</p>
-        </form>
-      </div>
-      <div class="quick-link-grid" aria-label="Quick service links">
-        <a href="#services"><strong>Apply for Certificate</strong><span>Start online application</span></a>
-        <a href="#appointments"><strong>Book Appointment</strong><span>Select department and slot</span></a>
-        <a href="#documents"><strong>Upload Documents</strong><span>Manage required files</span></a>
-        <a href="#tracking"><strong>Track Status</strong><span>Check application progress</span></a>
-        <a href="#help"><strong>Need Help?</strong><span>Read common guidance</span></a>
-        <a href="#login"><strong>Citizen Login</strong><span>Access dashboard</span></a>
-      </div>
-    </section>
-
     <section class="section service-band" id="services">
       <div class="section-heading">
         <p class="eyebrow">Service discovery</p>
@@ -180,25 +87,25 @@
         <p>Citizens can search, filter, and select services based on their need.</p>
       </div>
       <div class="service-grid">
-        <article class="service-card" data-search="certificate income residence birth application">
+        <article class="service-card">
           <span class="card-icon">ID</span>
           <h3>Certificates</h3>
           <p>Apply for income, residence, birth, and other certificate-related services.</p>
           <a href="#login">Start application</a>
         </article>
-        <article class="service-card" data-search="appointment booking verification service desk support">
+        <article class="service-card">
           <span class="card-icon">AP</span>
           <h3>Appointments</h3>
           <p>Book slots for document verification, service desks, and support visits.</p>
           <a href="#appointments">Book slot</a>
         </article>
-        <article class="service-card" data-search="document upload identity proof address proof application files">
+        <article class="service-card">
           <span class="card-icon">DM</span>
           <h3>Documents</h3>
           <p>Upload and manage identity proof, address proof, and application files.</p>
           <a href="#documents">Manage files</a>
         </article>
-        <article class="service-card" data-search="status tracking application progress verification decision">
+        <article class="service-card">
           <span class="card-icon">TR</span>
           <h3>Status Tracking</h3>
           <p>Track applications from submission to verification, decision, or correction.</p>
@@ -207,23 +114,8 @@
       </div>
     </section>
 
-    <section class="section journey-section" aria-labelledby="journeyTitle">
-      <div class="section-heading">
-        <p class="eyebrow">Simple citizen journey</p>
-        <h2 id="journeyTitle">Designed for public use in clear steps.</h2>
-        <p>The flow is intentionally simple so first-time users can understand what to do next.</p>
-      </div>
-      <div class="journey-grid">
-        <article><span>01</span><h3>Choose Service</h3><p>Browse or search the required public service.</p></article>
-        <article><span>02</span><h3>Fill Form</h3><p>Enter details with clear labels and validation.</p></article>
-        <article><span>03</span><h3>Upload Files</h3><p>Add required proof documents in one place.</p></article>
-        <article><span>04</span><h3>Track Updates</h3><p>View status, notifications, and appointment details.</p></article>
-      </div>
-    </section>
-
     <section class="split-section" id="appointments">
       <div>
-        <img class="section-visual" src="assets/service-kiosk.svg" alt="Digital appointment and citizen service illustration" />
         <p class="eyebrow">Appointment booking</p>
         <h2>Plan office visits with a clear time slot.</h2>
         <p>
@@ -271,11 +163,9 @@
       </div>
       <div class="document-row">
         <div class="upload-box">
-          <img class="inline-visual" src="assets/documents-moment.svg" alt="Document upload illustration" />
           <strong>Upload Document</strong>
           <p>Supported examples: ID proof, address proof, certificate scans, and application forms.</p>
-          <input type="file" id="documentUpload" aria-label="Upload document" accept=".pdf,.jpg,.jpeg,.png" />
-          <p class="form-message" id="documentMessage" role="status"></p>
+          <input type="file" aria-label="Upload document" />
         </div>
         <div class="document-list">
           <div><span>Address Proof.pdf</span><span class="tag verified">Verified</span></div>
@@ -287,7 +177,6 @@
 
     <section class="split-section" id="tracking">
       <div class="tracking-panel">
-        <img class="inline-visual" src="assets/status-moment.svg" alt="Application tracking illustration" />
         <p class="eyebrow">Application tracking</p>
         <h2>Track progress with a reference number.</h2>
         <form id="trackingForm" class="inline-form">
@@ -312,28 +201,6 @@
       </div>
     </section>
 
-    <section class="section help-section" id="help">
-      <div class="section-heading">
-        <p class="eyebrow">Public help desk</p>
-        <h2>Helpful information for citizens.</h2>
-        <p>Common support content makes the portal easier for public users to understand.</p>
-      </div>
-      <div class="help-grid">
-        <article>
-          <h3>What documents may be needed?</h3>
-          <p>Identity proof, address proof, certificate scans, and service-specific forms may be requested depending on the selected service.</p>
-        </article>
-        <article>
-          <h3>How can I track my application?</h3>
-          <p>Use the application reference number in the tracking section to view the current prototype status flow.</p>
-        </article>
-        <article>
-          <h3>Is this an official portal?</h3>
-          <p>No. This is a hypothetical student internship prototype for project planning and frontend demonstration.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="auth-section" id="login">
       <div>
         <p class="eyebrow">Login and registration</p>
@@ -349,14 +216,12 @@
           <input type="email" placeholder="Email address" aria-label="Email address" required />
           <input type="password" placeholder="Password" aria-label="Password" required />
           <button class="primary-btn" type="submit">Login</button>
-          <p class="form-message" id="loginMessage" role="status"></p>
         </form>
         <form class="auth-form" id="registerForm">
           <input type="text" placeholder="Full name" aria-label="Full name" required />
           <input type="email" placeholder="Email address" aria-label="Email address" required />
           <input type="password" placeholder="Create password" aria-label="Create password" required />
           <button class="primary-btn" type="submit">Create Account</button>
-          <p class="form-message" id="registerMessage" role="status"></p>
         </form>
       </div>
     </section>
@@ -368,11 +233,9 @@
       <p>Hypothetical internship project prototype. Not an official government portal.</p>
     </div>
     <div class="footer-links">
-      <a href="#quick-access">Quick Access</a>
       <a href="#services">Services</a>
       <a href="#documents">Documents</a>
       <a href="#tracking">Track</a>
-      <a href="#help">Help</a>
       <a href="#login">Login</a>
     </div>
     <p class="updated">Last updated: August 2026 | Created for Week 1 Planning & Strategy task</p>
